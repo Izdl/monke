@@ -20,9 +20,9 @@ server.on("upgrade", (req, socket, head) => {
         socket.end();
     }
 });
-console.log("Starting on port: " + 3000 + process.env.NODE_APP_INSTANCE)
+console.log("Starting on port: " + Number(3000 + Number(process.env.NODE_APP_INSTANCE)))
 server.listen({
-    port: 3000 + process.env.NODE_APP_INSTANCE,
+    port: Number(3000 + Number(process.env.NODE_APP_INSTANCE)),
 });
 
 

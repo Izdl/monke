@@ -1,8 +1,6 @@
 import { createServer } from "http";
 import express from "express";
 import createBareServer from "@tomphttp/bare-server-node";
-import dotenv from "dotenv";
-dotenv.config();
 const app = express();
 const server = createServer();
 const bare = createBareServer('/bare/');

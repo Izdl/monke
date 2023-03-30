@@ -5,4 +5,3 @@ npm install
 npm run build
 cp -r ./public ../public
 cd ..
-npm run start

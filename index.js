@@ -24,7 +24,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.listen({
-    port: process.env.PORT || 3000,
+    port: 3000 + process.env.NODE_APP_INSTANCE,
 });
 
 

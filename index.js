@@ -3,7 +3,7 @@ import express from "express";
 import createBareServer from "@tomphttp/bare-server-node";
 const app = express();
 const server = createServer();
-const bare = createBareServer('/bare/');
+const bare = createBareServer('/bare/', {blockLocal: false})
 app.use(express.static("public"));
 server.on("request", (req, res) => {
     if(bare.shouldRoute(req)) {

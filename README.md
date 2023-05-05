@@ -5,5 +5,4 @@ git clone https://github.com/Abyss-Services/Deployable -b node1
 cd Deployable
 chmod +x ./setup.sh
 ./setup.sh
-npm start
 ```
